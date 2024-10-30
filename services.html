@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="image/icon.png">
+    <title>SERVICES</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111; /* Black background */
+            color: #f0e68c; /* Gold text */
+        }
+
+        /* Top navigation styles */
+        .top-nav {
+            background-color: black;
+            overflow: hidden;
+            height: 50px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .top-nav a {
+            color: #f0e68c;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .top-nav a:hover {
+            background-color: #f0e68c;
+            color: black;
+        }
+
+        .top-nav a.active {
+            background-color: goldenrod;
+            color: black;
+        }
+
+        /* Container and section styles */
+        .container {
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px; /* Adjusted to match the top-nav height */
+            height: calc(100vh - 50px);
+            box-sizing: border-box;
+        }
+
+        .section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #f0e68c;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        /* Individual section colors */
+        .websitedevelopment {
+            background-color: #222;
+        }
+
+        .training {
+            background-color: #333;
+        }
+
+        .systemsolution {
+            background-color: #444;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            max-width: 90%; /* Smaller max-width to fit the section */
+            border-collapse: collapse;
+            color: #f0e68c;
+            font-size: 16px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        th, td {
+            border: 1px solid #f0e68c;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: #f0e68c;
+        }
+
+        td {
+            background-color: #222;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #000;
+            color: #f0e68c;
+            border-top: 2px solid #f0e68c;
+            width: 100%;
+            bottom: 0;
+            position: fixed;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                margin-top: 60px; /* Adjusted margin-top for smaller screens */
+                height: auto;
+            }
+
+            .top-nav a {
+                width: 100%;
+                padding: 12px;
+            }
+
+            .section {
+                font-size: 20px;
+            }
+
+            table {
+                width: 100%;
+                font-size: 14px;
+            }
+
+            footer {
+                position: relative;
+                bottom: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation -->
+    <div class="top-nav">
+        <a href="home.html">HOME</a>
+        <a href="services.html" class="active">SERVICES</a>
+        <a href="courses.html">COURSES</a>
+        <a href="contactus.html">CONTACT US</a>
+    </div>
+
+    <!-- Services Sections -->
+    <div class="container">
+        <div class="section websitedevelopment">
+            <p>Website Development</p>
+            <table>
+                <tr>
+                    <th>Software/System</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>HTML/CSS</td>
+                    <td>Front-End</td>
+                    <td>Languages used for structuring and styling web content.</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Front-End</td>
+                    <td>Programming language for interactive elements on the web.</td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td>Front-End</td>
+                    <td>JavaScript library for building user interfaces.</td>
+                </tr>
+                <tr>
+                    <td>Node.js</td>
+                    <td>Back-End</td>
+                    <td>JavaScript runtime environment for server-side development.</td>
+                </tr>
+                <tr>
+                    <td>Laravel</td>
+                    <td>Back-End</td>
+                    <td>PHP framework used for building robust web applications.</td>
+                </tr>
+                <tr>
+                    <td>MySQL</td>
+                    <td>Database</td>
+                    <td>Database management system for storing and managing data.</td>
+                </tr>
+            </table>
+        </div>
+        <div class="section training">
+            <p>IT Training</p>
+        </div>
+        <div class="section systemsolution">
+            <p>IT System Solution</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 IT Training Program. All rights reserved.</p>
+    </footer>
+</body>
+</html>

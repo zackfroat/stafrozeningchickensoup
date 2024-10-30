@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type= "x-icon" href="image/icon.png">
+    <title>CONTACT US</title>
+    <style>
+        /* General styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: gold;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Full viewport height */
+        }
+
+        /* Top navigation styles */
+        .top-nav {
+            background-color: black;
+            overflow: hidden;
+        }
+
+        .top-nav a {
+            float: left;
+            display: block;
+            color: gold;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .top-nav a:hover {
+            background-color: gold;
+            color: black;
+        }
+
+        .top-nav a.active {
+            background-color: gold;
+            color: black;
+        }
+
+        /* Main content container */
+        .container {
+            flex: 1; /* Allows container to grow and push footer to the bottom */
+            display: flex;
+        }
+
+        .section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .section img {
+            margin-top: 20px;
+            width: 150px;
+            height: 150px;
+        }
+
+        /* Background colors for sections */
+        .whatsapp {
+            background-color: #d3d3d3;
+            color: black;
+        }
+
+        .instagram {
+            background-color: #a9a9a9;
+            color: black;
+        }
+
+        .tiktok {
+            background-color: #696969;
+            color: white;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: gold;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .top-nav a {
+                float: none;
+                width: 100%;
+                padding: 12px;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            .section {
+                font-size: 18px;
+                padding: 10px;
+            }
+
+            .section img {
+                width: 200px;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation -->
+    <div class="top-nav">
+        <a href="home.html">HOME</a>
+        <a href="services.html">SERVICES</a>
+        <a href="courses.html">COURSES</a>
+        <a href="contactus.html" class="active">CONTACT US</a>
+    </div>
+
+    <!-- Social Media Sections -->
+    <div class="container">
+        <div class="section whatsapp">
+            <a href="https://wa.link/2qg3h9" target="_blank">
+                <img src="image/whatsapp.png" alt="Click to Open Link">
+            </a>
+            WhatsApp
+        </div>
+        <div class="section instagram">
+            <a href="https://www.instagram.com/za_atizi/" target="_blank">
+                <img src="image/instagram.png" alt="Click to Open Link">
+            </a>
+            Instagram
+        </div>
+        <div class="section tiktok">
+            <a href="https://www.tiktok.com/@izzikun" target="_blank">
+                <img src="image/tiktok.png" alt="Click to Open Link">
+            </a>
+            TikTok
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 IT Training Program. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

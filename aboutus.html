@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type= "x-icon" href="image/icon.png">
+    <title>ABOUT US</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: gold;
+            text-align: left;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: darkgrey;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .bio-section {
+            flex: 2;
+            margin-right: 20px;
+        }
+        .bio-section h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .bio-section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .skills-section {
+            margin-top: 30px;
+        }
+        .skills-section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .skills-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills-section ul li {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .image-section {
+            flex: 1;
+            text-align: center;
+        }
+        .image-section img {
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Top navigation bar styles */
+        .top-nav {
+            background-color: black;
+            overflow: hidden;
+        }
+
+        .top-nav a {
+            float: left;
+            display: block;
+            color: gold;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .top-nav a:hover {
+            background-color: gold;
+            color: black;
+        }
+
+        .top-nav a.active {
+            background-color: gold;
+            color: black;
+        }
+
+        /* Darker grey footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #a9a9a9;
+            color: black;
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 768px) {
+            /* Stack container content vertically */
+            .container {
+                flex-direction: column;
+                align-items: center;
+                margin: 20px;
+            }
+
+            /* Adjust bio and skills sections padding */
+            .bio-section {
+                margin-right: 0;
+                text-align: center;
+            }
+
+            /* Resize titles */
+            .bio-section h1 {
+                font-size: 28px;
+            }
+
+            .skills-section h2 {
+                font-size: 20px;
+            }
+
+            /* Resize navigation */
+            .top-nav a {
+                float: none;
+                width: 100%;
+                padding: 12px;
+            }
+
+            /* Adjust footer font size */
+            footer {
+                font-size: 12px;
+            }
+
+            /* Adjust image size */
+            .image-section img {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="top-nav">
+        <a href="home.html">HOME</a>
+        <a href="services.html">SERVICES</a>
+        <a href="courses.html">COURSES</a>
+        <a href="contactus.html">CONTACT US</a>
+    </div>
+
+    <!-- Portfolio Content -->
+    <div class="container">
+        <div class="bio-section">
+            <h1>About Me</h1>
+            <p>
+                Hi! My name is <i><b>Za Atizi</b></i>, a passionate web developer with a keen interest in building responsive and user-friendly websites. I love tackling challenges and continuously improving my skills in various programming languages and frameworks.
+            </p>
+            <div class="skills-section">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>MySQL</li>
+                    <li>React</li>
+                    <li>Git & GitHub</li>
+                </ul>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="image/profile.png" alt="My Photo">
+        </div>
+    </div>
+
+    <footer>
+        <b><p>&copy; 2024 IT Training Program. All rights reserved.</p></b>
+    </footer>
+
+</body>
+</html>

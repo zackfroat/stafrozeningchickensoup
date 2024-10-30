@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type= "x-icon" href="image/icon.png">
+    <title>IT Training Course</title>
+    <style>
+        body {
+            background-color: #000000; /* Black background */
+            color: #FFD700; /* Gold text */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Top navigation styles */
+        .top-nav {
+            background-color: black;
+            overflow: hidden;
+        }
+
+        .top-nav a {
+            float: left;
+            display: block;
+            color: #FFD700;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .top-nav a:hover {
+            background-color: #FFD700;
+            color: black;
+        }
+
+        .top-nav a.active {
+            background-color: goldenrod;
+            color: black;
+        }
+
+        header {
+            background-color: #1c1c1c;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #FFD700;
+            margin: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .course-section {
+            border: 1px solid #FFD700;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #FFD700;
+            border-bottom: 2px solid #FFD700;
+            padding-bottom: 10px;
+        }
+
+        .course-schedule ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .course-schedule ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #1c1c1c;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            color: #FFD700;
+            margin: 0;
+        }
+
+        /* Button Styling */
+        .btn {
+            background-color: #FFD700;
+            color: #000000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #ffcc00;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            /* Stack navigation vertically on smaller screens */
+            .top-nav a {
+                float: none;
+                width: 100%;
+                padding: 12px;
+            }
+
+            /* Responsive padding and font adjustments */
+            .container {
+                padding: 10px;
+            }
+
+            .course-section {
+                padding: 10px;
+            }
+
+            h2 {
+                font-size: 20px;
+                padding-bottom: 5px;
+            }
+
+            .course-schedule ul li {
+                font-size: 16px;
+            }
+
+            footer {
+                padding: 5px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Navigation -->
+    <div class="top-nav">
+        <a href="home.html">HOME</a>
+        <a href="services.html">SERVICES</a>
+        <a href="courses.html" class="active">COURSES</a>
+        <a href="contactus.html">CONTACT US</a>
+    </div>
+
+    <header>
+        <h1>IT Training Course</h1>
+    </header>
+
+    <div class="container">
+        <section class="course-section">
+            <h2>Course Overview</h2>
+            <p>Welcome to the IT Training Course! In this program, you'll gain hands-on experience with various IT tools and technologies. Our goal is to equip you with the knowledge and skills required to excel in the IT industry.</p>
+        </section>
+
+        <section class="course-section course-schedule">
+            <h2>Course Schedule</h2>
+            <ul>
+                <li>Week 1: Introduction to IT & Networking</li>
+                <li>Week 2: Operating Systems and Virtualization</li>
+                <li>Week 3: Cybersecurity Basics</li>
+                <li>Week 4: Cloud Computing</li>
+                <li>Week 5: Data Management & Databases</li>
+                <li>Week 6: Final Project and Evaluation</li>
+            </ul>
+        </section>
+
+        <section class="course-section">
+            <h2>Instructors</h2>
+            <p>Our instructors are industry professionals with years of experience in IT. They are here to guide you through the course and ensure you succeed in your training.</p>
+        </section>
+
+        <section class="course-section">
+            <h2>Contact Information</h2>
+            <p>If you have any questions, feel free to contact us at <strong>zzaatizi@gmail.com</strong> or call us at <strong>+6011-6398 6949</strong>.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 IT Training Program. All rights reserved.</p>
+    </footer>
+</body>
+</html>
